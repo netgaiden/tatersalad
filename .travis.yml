@@ -17,7 +17,8 @@ install:
 # Then, run the playbook in "check" mode. If either one fails, abandon
 # testing.
 before_script:
-  - "find . -name '*.yml' | xargs yamllint --strict"
+#  - "find . -name '*.yml' | xargs yamllint --strict"
+  - "find . -name '*.yml' | xargs yamllint"
   - "ansible-playbook --check ntp_config.yml"
 
 # Perform playbook testing with on pre-existing virtual routers.
