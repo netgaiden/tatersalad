@@ -8,7 +8,7 @@
   import_playbook: "ntp_config.yml"
   vars:
     ntp_server1: "203.0.113.1"
-    ntp_server2: "203.0.113.2"
+    ntp_server2: "203.0.113.3"
 
 # This is the second play. Its purpose is to ensure the
 # first play (playbook import) worked correctly. The general
